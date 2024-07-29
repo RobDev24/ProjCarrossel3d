@@ -1,16 +1,28 @@
 *{margin:0;
     padding:0;
-    box-sizing:border-box}
+    }
     body{height:100vh;
         display:flex;
         align-items:center;
         justify-content:center;
-        background-color:#101011}
+        background-color:#101011;
+    background-image: url('./img/bbjotomrob1.jpg') ;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;}
        .music{
         display: block;
         height: 40px;
         width: 200px;
         margin-top: -250px;
+       }
+
+       .galeria span img:hover{
+        transform: translateY(-10px) scale(1.5);
+        cursor: pointer;
+       }
+       .galeria:hover{
+        animation-play-state: paused;
        }
         .galeria{position:relative;
             top:0;left:-150px;
@@ -19,7 +31,10 @@
             transform-style:preserve-3d;
             animation:rotate 20s linear infinite}
             @keyframes rotate{
-                0%{transform:perspective(1300px) rotateY(0deg)}
-                100%{transform:perspective(1300px) rotateY(360deg)}}
-                .galeria span{position:absolute;width:100%;height:100%;top:0;left:0;transform-origin:center;transform-style:preserve-3d;transform:rotateY(calc(var(--i) * 45deg)) translateZ(300px)}
-                .galeria nav img{position:absolute;top:0;left:0;width:100%;height:100%}
+                0%{transform:perspective(1000px) rotateY(0deg)}
+                100%{transform:perspective(1000px) rotateY(360deg)}}
+                .galeria span{position:absolute;width:100%;height:100%;top:0;left:0;transform-origin:center;transform-style:preserve-3d;transform:rotateY(calc(var(--i) * 45deg)) translateZ(400px);}
+                .galeria nav img{position:absolute;top:0;left:0;width:100%;height:100%; 
+
+                }
+                
